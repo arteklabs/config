@@ -1,6 +1,7 @@
 # !/bin/bash
 # config vscode
 # extensions
+echo "[WARNING] remember to kill zscaler"
 echo "[1 of 3] installing extensions"
 extensions=(
     # themes
@@ -20,4 +21,4 @@ done
 
 echo "[WARNING] overwriting your current vscode config if any"
 echo "[2 of 3] configuring (see vscode/settings.json)"
-cp settings.json ~/Library/Application\ Support/Code/User/settings.json
+cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json

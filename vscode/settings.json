@@ -3,5 +3,19 @@
     "hediet.vscode-drawio.resizeImages": null,
 
     // default terminal: zsh
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+
+    // editor
+    // word wrap for markdown files
+    "[markdown]": {
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 80
+    },
+    // TODO word wrap for rest files
+
+    // layout
+    "workbench.sideBar.location": "right",
+
+    // theme
+    "workbench.colorTheme": "GitHub Dark Default"    
 }
