@@ -12,6 +12,9 @@ extensions=(
 
     # open pdf files
     "tomoki1207.pdf"
+
+    # dev container
+    "ms-vscode-remote.remote-containers"
 )
 
 for extension in "${extensions[@]}"; do
