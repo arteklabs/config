@@ -8,19 +8,13 @@
 # - vscode extensions
 extensions=(
     "alexkrechik.cucumberautocomplete"
-    # "AlexShen.classdiagram-ts"
     "amazonwebservices.aws-toolkit-vscode"
-    # "christian-kohler.npm-intellisense"
-    # "christian-kohler.path-intellisense"
     "CucumberOpen.cucumber-official"
     "DavidAnson.vscode-markdownlint"
-    # "dbaeumer.vscode-eslint"
     "esbenp.prettier-vscode"
     "GitHub.copilot"
     "hbenl.vscode-test-explorer"
-    # "kavod-io.vscode-jest-test-adapter"
     "mechatroner.rainbow-csv"
-    # "mhutchie.git-graph"
     "ms-azuretools.vscode-docker"
     "ms-python.isort"
     "ms-python.python"
@@ -29,41 +23,27 @@ extensions=(
     "ms-toolsai.jupyter-renderers"
     "ms-toolsai.vscode-jupyter-cell-tags"
     "ms-toolsai.vscode-jupyter-slideshow"
-    # "ms-vscode.test-adapter-converter"
     "njpwerner.autodocstring"
     "richie5um2.vscode-sort-json"
     "SimonSiefke.prettier-vscode"
     "streetsidesoftware.code-spell-checker"
     "timonwong.shellcheck"
-    # "ukoloff.win-ca" # zscaler on windows
     "yzhang.markdown-all-in-one"
     "alexkrechik.cucumberautocomplete"
-    # "AlexShen.classdiagram-ts"
     "amazonwebservices.aws-toolkit-vscode"
     "benjaminbenais.copilot-theme"
     "bierner.markdown-mermaid"
-    # "christian-kohler.npm-intellisense"
-    # "christian-kohler.path-intellisense"
-    # "dbaeumer.vscode-eslint"
-    # "designbyajay.typescript-snippets"
     "eamodio.gitlens"
     "esbenp.prettier-vscode"
     "foam.foam-vscode"
     "GitHub.copilot"
     "GitHub.github-vscode-theme"
-    # "hbenl.vscode-test-explorer"
     "hediet.vscode-drawio"
     "henriiik.docker-linter"
     "humao.rest-client"
-    # "immament.vscode-ngrx-uml"
-    # "indexsoftware.rds-data-api"
-    # "James-Yu.latex-workshop"
-    # "kavod-io.vscode-jest-test-adapter"
-    # "kingsimba.tsdoc-comment"
     "lextudio.restructuredtext"
     "linhmtran168.mac-ca-vscode"
     "magicstack.MagicPython"
-    # "Massi.javascript-docstrings"
     "mathematic.vscode-latex"
     "Meezilla.json"
     "mhutchie.git-graph"
@@ -83,9 +63,7 @@ extensions=(
     "ms-vscode.remote-explorer"
     "ms-vscode.remote-server"
     "ms-vscode.test-adapter-converter"
-    # "myxvisual.vscode-ts-uml"
     "njpwerner.autodocstring"
-    # "njqdev.vscode-python-typehint"
     "richie5um2.vscode-sort-json"
     "searKing.preview-vscode"
     "shalldie.background"
@@ -153,19 +131,14 @@ brews=(
     "docker-credential-helper"
     "colima"
 
+    # vscode
+    "powerlevel10k"
+
 )
 for brew in "${brews[@]}"; do
     brew install "$brew"
     echo -e "install system package '$brew': OK"
 done
-
-# casks=(
-#     "virtualbox"
-# )
-# for cask in "${casks[@]}"; do
-#     brew install --cask "$cask"
-#     echo -e "install gui app '$cask': OK"
-# done
 
 # aws cli
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
@@ -186,10 +159,6 @@ npm install -g spectaql
 # npm canvas
 npm install -g node-gyp
 echo -e "install system node app 'node': OK"
-
-# fonts
-brew Tap homebrew/cask-fonts && brew install --cask font-source-code-pro
-echo -e "install system font 'source code pro': OK"
 
 # TODO
 # ts deps
@@ -214,7 +183,7 @@ rm -rf sessionmanager-bundle.zip sessionmanager-bundle
 
 # docker
 #
-# write to /Users/dipm/.docker/config.json
+# TODO write to /Users/dipm/.docker/config.json
 # 
 # {
 #         "auths": {},

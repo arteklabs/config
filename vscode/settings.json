@@ -1,0 +1,7 @@
+{
+    // docs
+    "hediet.vscode-drawio.resizeImages": null,
+
+    // default terminal: zsh
+    "terminal.integrated.defaultProfile.osx": "zsh"
+}
