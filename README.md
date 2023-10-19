@@ -2,6 +2,12 @@
 
 POC for macOS config
 
+run: `. ./main.sh` for installing and configuring your macOS apps.
+
+# caveat
+
+not thoroughly tested
+
 # TODO
 
 - remove linux config to dedicated repo
