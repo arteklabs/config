@@ -8,13 +8,26 @@ extensions=(
     "GitHub.github-vscode-theme"
 
     # docs
-    "hediet.vscode-drawio"
+    "hediet.vscode-drawio" # diagrams
 
     # open pdf files
     "tomoki1207.pdf"
 
     # dev container
     "ms-vscode-remote.remote-containers"
+
+    # docker
+    "ms-azuretools.vscode-docker"
+
+    # python
+    "ms-python.python"
+
+    # linting
+    "njpwerner.autodocstring" # python
+
+    # copilot
+    "GitHub.copilot"
+    "GitHub.copilot-chat"
 )
 
 for extension in "${extensions[@]}"; do
